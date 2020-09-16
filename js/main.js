@@ -81,7 +81,7 @@
 
       //use d3.queue to parallelize asynchronous data loading
       d3.queue()
-          .defer(d3.csv, 'data/CA_hist_pop_v2.csv') //load attributes from csv
+          .defer(d3.csv, 'data/CA_Hist_pop_v2.csv') //load attributes from csv
           //.defer(d3.json, ) //load background spatial data
           .defer(d3.json, 'data/county_CA.topojson') //load choropleth spatial data
           .await(callback);
